@@ -1,0 +1,26 @@
+{
+  "name": "@xely/material-color-uno",
+  "version": "0.1.0",
+  "exports": {
+    "./preset": "./src/preset.ts"
+  },
+  "tasks": {
+    "dev": "deno run -A npm:vite"
+  },
+  "fmt": {
+    "semiColons": false,
+    "singleQuote": true
+  },
+  "imports": {
+    "@material/material-color-utilities": "npm:@material/material-color-utilities@^0.3.0",
+    "@unocss/core": "npm:@unocss/core@^0.63.4",
+    "@unocss/preset-mini": "npm:@unocss/preset-mini@^0.63.4",
+    "@unocss/preset-uno": "npm:@unocss/preset-uno@^0.63.4",
+    "@unocss/vite": "npm:@unocss/vite@^0.63.4",
+    "vite": "npm:vite@^5.4.8"
+  },
+  "nodeModulesDir": "auto",
+  "publish": {
+    "include": ["src"]
+  }
+}
